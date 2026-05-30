@@ -1,0 +1,6 @@
+.venv
+__pycache__
+*.pyc
+.uv_cache
+tests
+README.md
