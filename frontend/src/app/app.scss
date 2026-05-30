@@ -1,0 +1,34 @@
+/* ------------------------------------------------------------------ */
+/*  App Shell — layout per docs/08-style.md                          */
+/* ------------------------------------------------------------------ */
+
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Top bar */
+.top-bar {
+  padding: 32px 36px 0;
+}
+
+/* Navigation */
+.nav-bar {
+  display: flex;
+  gap: 28px;
+  padding: 22px 36px 0;
+}
+
+/* Content area */
+.content-area {
+  flex: 1;
+  padding: 32px 36px 40px;
+}

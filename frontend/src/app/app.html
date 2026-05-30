@@ -1,0 +1,26 @@
+<!-- Marieta — App shell -->
+<div class="app-container">
+  <!-- Top bar: logo + spacer -->
+  <header class="top-bar">
+    <span class="logo">Marieta</span>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    @for (item of navItems; track item.route) {
+      <a
+        class="nav-item"
+        [routerLink]="[item.route]"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: false }"
+      >
+        {{ item.label }}
+      </a>
+    }
+  </nav>
+
+  <!-- Content area -->
+  <main class="content-area">
+<router-outlet />
+  </main>
+</div>
